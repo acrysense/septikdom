@@ -5,11 +5,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>septikdom - Карта сайта</title>
-	<meta property="og:title" content="septikdom - Карта сайта">
+	<title>septikdom - Портфолио</title>
+	<meta property="og:title" content="septikdom - Портфолио">
 	<meta property="og:description" content="Описание">
 	<meta property="og:url" content="/">
-	<meta property="og:site_name" content="septikdom - Карта сайта">
+	<meta property="og:site_name" content="septikdom - Портфолио">
 	<!-- favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -102,42 +102,75 @@
 							<a href="home.html" class="breadcrumb__link">Главная</a>
 						</li>
 						<li class="breadcrumb__item">
-							<a href="index.html" class="breadcrumb__link">Карта сайта</a>
+							<a href="portfolio.html" class="breadcrumb__link">Портфолио</a>
 						</li>
 					</ol>
 				</div>
 			</div>
 			<!-- end of breadcrumbs -->
-			<!-- sitemap -->
-			<section class="sitemap section-indent-top" id="sitemap">
+			<!-- portfolio -->
+			<section class="portfolio section-indent-top" id="portfolio">
 				<div class="container">
-					<div class="section-heading sitemap__heading">
-						<h2 class="section-heading__title">Карта сайта</h2>
-					</div>
-					<div class="sitemap__nav">
-						<div class="sitemap__block">
-							<ul class="sitemap__list">
-								<li class="sitemap__item">
-									<a href="home.html" class="sitemap__link" target="_blank">Главная (<span class="grey">следующий этап</span>)</a>
-								</li>
-								<li class="sitemap__item">
-									<a href="reviews.html" class="sitemap__link" target="_blank">Отзывы (<span>в работе</span>)</a>
-								</li>
-								<li class="sitemap__item">
-									<a href="delivery.html" class="sitemap__link" target="_blank">Доставка и оплата (<span class="green">выполнено</span>)</a>
-								</li>
-								<li class="sitemap__item">
-									<a href="portfolio.html" class="sitemap__link" target="_blank">Портфолио (<span>в работе</span>)</a>
-								</li>
-								<li class="sitemap__item">
-									<a href="portfolio-inner.html" class="sitemap__link" target="_blank">Портфолио внутренняя (<span>в работе</span>)</a>
-								</li>
-							</ul>
-						</div>
+					<div class="section-heading">
+						<h2 class="section-heading__title"><b>6 300+ автономных канализаций</b> установили с 2008 года</h2>
+						<h3 class="section-heading__subtitle">Благодаря накопленному опыту легко справляемся с монтажом станций очистки <br>для загородных домов, дач и коттеджей на участках любой сложности </h3>
 					</div>
 				</div>
 			</section>
-			<!-- end of sitemap -->
+			<!-- end of portfolio -->
+			<!-- cost calculation -->
+			<div class="cost-calculation" id="cost-calculation">
+				<div class="container">
+					<div class="cost-calculation__wrap">
+						<div class="cost-calculation__body">
+							<h2 class="cost-calculation__heading">Узнайте точную стоимость всех работ <b>за 1 минуту</b></h2>
+							<p class="cost-calculation__description"><b>Получите годовое обслуживание бесплатно</b> при обращении сегодня, позвоните прямо сейчас</p>
+							<a href="tel:78123857383" class="cost-calculation__number">+7 812 385 73 83</a>
+							<p class="cost-calculation__description">Либо закажите звонок и мы перезвоним <br>вам сами в течение 15 минут</p>
+						</div>
+						<form action="#" class="cost-calculation-form cost-calculation__form">
+							<div class="cost-calculation-form__inner">
+								<div class="cost-calculation-form__item">
+									<div class="input-field cost-calculation-form__input">
+										<div class="input-field__inner">
+											<svg class="input-field__icon">
+												<use xlink:href="img/sprite.svg#icon-user-box"></use>
+											</svg>
+											<input type="text" class="input-field__input" placeholder="Ваше имя*">
+										</div>
+									</div>
+								</div>
+								<div class="cost-calculation-form__item">
+									<div class="input-field cost-calculation-form__input">
+										<div class="input-field__inner">
+											<svg class="input-field__icon">
+												<use xlink:href="img/sprite.svg#icon-call"></use>
+											</svg>
+											<input type="text" class="input-field__input" placeholder="+7" data-inputmask="'mask': '+7 (999) 999-99-99'">
+										</div>
+									</div>
+								</div>
+								<div class="cost-calculation-form__item">
+									<button class="cost-calculation-form__btn btn">
+										<span>Заказать звонок</span>
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-arrow-circle-next"></use>
+										</svg>
+									</button>
+									<p class="cost-calculation-form__description">Нажимая на кнопку, вы соглашаетесь с <a href="#">Условиями обработки данных</a> и <a href="#">Политикой конфиденциальности</a></p>
+								</div>
+							</div>
+						</form>
+						<picture class="cost-calculation__img">
+							<img src="img/cost-calculation-person.png" alt="Image">
+						</picture>
+						<picture class="cost-calculation__bg">
+							<img src="img/cost-calculation-bg.jpg" alt="Image">
+						</picture>
+					</div>
+				</div>
+			</div>
+			<!-- end of cost calculation -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->
