@@ -285,6 +285,22 @@ svg {
 .btn--white:hover {
   color: #424242;
 }
+.btn--whapp {
+  color: #FFFFFF;
+  background: #60D669;
+  border-color: #60D669;
+}
+.btn--whapp > svg {
+  color: #FFFFFF;
+}
+.btn--tg {
+  color: #FFFFFF;
+  background: #2AABEE;
+  border-color: #2AABEE;
+}
+.btn--tg > svg {
+  color: #FFFFFF;
+}
 @media screen and (hover: hover) {
   .btn--border:hover {
     color: #FFFFFF;
@@ -5662,6 +5678,679 @@ svg {
   }
 }
 
+.personal-consultation {
+  position: relative;
+  z-index: 1;
+}
+.personal-consultation::before {
+  content: "";
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  z-index: -1;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  display: block;
+  width: 100%;
+  height: 1189px;
+  background-image: url(../img/personal-consult-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+@media screen and (max-width: 1023px) {
+  .personal-consultation {
+    overflow: hidden;
+  }
+  .personal-consultation::before {
+    top: 74px;
+    width: 1973px;
+  }
+}
+.personal-consultation__heading {
+  display: block;
+  margin: 0 auto 100px;
+  max-width: 1028px;
+  width: 100%;
+  font-family: "Manrope", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.425;
+  text-align: center;
+  letter-spacing: -0.8px;
+}
+.personal-consultation__heading > img {
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.personal-consultation__heading > img, .personal-consultation__heading > svg {
+  margin-top: -5px;
+  margin-right: 15px;
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .personal-consultation__heading {
+    margin: 0 0 52px;
+    max-width: 497px;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 767px) {
+  .personal-consultation__heading {
+    margin: 0 0 30px;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .personal-consultation__heading {
+    font-size: 30px;
+    line-height: 1.3;
+    letter-spacing: -0.6px;
+  }
+  .personal-consultation__heading > img, .personal-consultation__heading > svg {
+    margin-right: 11px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .personal-consultation__heading {
+    font-size: 26px;
+    line-height: 1.5384615385;
+    letter-spacing: -0.6px;
+  }
+  .personal-consultation__heading > img, .personal-consultation__heading > svg {
+    margin-right: 11px;
+  }
+}
+.personal-consultation__wrapper {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .personal-consultation__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.personal-consultation__body {
+  max-width: 441px;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .personal-consultation__body {
+    max-width: 308px;
+  }
+}
+.personal-consultation__title {
+  display: block;
+  margin-bottom: 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Manrope", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.3333333333;
+  letter-spacing: -0.6px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .personal-consultation__title {
+    margin-right: -70px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .personal-consultation__title {
+    margin-bottom: 35px;
+    font-size: 20px;
+    letter-spacing: -0.4px;
+  }
+}
+.personal-consultation__list {
+  margin-left: 36px;
+  max-width: 369px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .personal-consultation__list {
+    margin-left: 16px;
+    max-width: calc(100% - 70px);
+  }
+}
+@media screen and (max-width: 767px) {
+  .personal-consultation__list {
+    margin-left: 0;
+  }
+}
+.personal-consultation__list ul li {
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding-left: 29px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+.personal-consultation__list ul li::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  z-index: 1;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/sprite.svg#icon-square-check);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.personal-consultation__list ul li + li {
+  margin-top: 27px;
+}
+.personal-consultation__img {
+  position: absolute;
+  left: calc(50% - 52.5px);
+  bottom: -160px;
+  z-index: -1;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  display: block;
+  overflow: hidden;
+  width: 576px;
+  height: 669px;
+}
+.personal-consultation__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .personal-consultation__img {
+    left: calc(50% + 12.5px);
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .personal-consultation__img {
+    position: absolute;
+    top: 90px;
+    right: 0;
+    left: auto;
+    bottom: auto;
+    -webkit-transform: translate(0, -100%);
+        -ms-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+    width: 414px;
+    height: 466px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .personal-consultation__img {
+    position: absolute;
+    top: 140px;
+    right: -60px;
+    left: auto;
+    bottom: auto;
+    -webkit-transform: translate(0, -100%);
+        -ms-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+    width: 414px;
+    height: 466px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .personal-consultation__img {
+    position: absolute;
+    right: -100px;
+    left: auto;
+    bottom: 370px;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    width: 310px;
+    height: 348px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .personal-consultation__img {
+    display: none;
+  }
+}
+.personal-consultation__form {
+  position: relative;
+  z-index: 2;
+  margin-top: 18px;
+  max-width: 413px;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .personal-consultation__form {
+    margin-top: 58px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .personal-consultation__form {
+    margin-top: 103px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .personal-consultation__form {
+    min-width: 413px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .personal-consultation__form {
+    margin: 30px 0 0 auto;
+  }
+}
+.personal-consultation__contacts {
+  position: relative;
+  z-index: 2;
+  margin-top: 94px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .personal-consultation__contacts {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .personal-consultation__contacts {
+    margin-top: 30px;
+  }
+}
+
+.personal-consultation-form {
+  overflow: hidden;
+  padding: 28px 37px;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+@media screen and (max-width: 479px) {
+  .personal-consultation-form {
+    padding: 28px 16px;
+  }
+}
+.personal-consultation-form__title {
+  display: block;
+  margin: 0 -10px 34px;
+  font-family: "Manrope", sans-serif;
+  font-size: 26px;
+  font-weight: normal;
+  line-height: 1.3333333333;
+  letter-spacing: -0.52px;
+  text-align: center;
+}
+@media screen and (max-width: 479px) {
+  .personal-consultation-form__title {
+    margin: 0 0 34px;
+  }
+}
+.personal-consultation-form__input {
+  width: 100%;
+}
+.personal-consultation-form__input + .personal-consultation-form__input {
+  margin-top: 15px;
+}
+.personal-consultation-form__btn {
+  margin-top: 15px;
+  width: 100%;
+}
+@media screen and (max-width: 479px) {
+  .personal-consultation-form__btn {
+    white-space: nowrap;
+  }
+  .personal-consultation-form__btn > * + * {
+    margin-left: 8px;
+  }
+}
+.personal-consultation-form__copyright {
+  display: block;
+  margin: 33px auto 0;
+  max-width: 298px;
+  width: 100%;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: center;
+  color: #C4C4C4;
+}
+.personal-consultation-form__copyright a {
+  display: inline;
+  color: #3877F2;
+  border-bottom: 1px solid #3877F2;
+}
+.personal-consultation-form__copyright a:hover {
+  color: #3877F2;
+}
+@media screen and (hover: hover) {
+  .personal-consultation-form__copyright a:hover {
+    color: #34A844;
+    border-color: #34A844;
+  }
+}
+
+.personal-consultation-contacts__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+  padding: 48px 141px 58px;
+  background: #FFFFFF;
+  border-radius: 30px;
+}
+@media screen and (min-width: 1700px) {
+  .personal-consultation-contacts__wrap {
+    margin: 0 -140.5px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1699px) {
+  .personal-consultation-contacts__wrap {
+    margin: 0 -38.5px;
+    padding: 48px 71px 58px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .personal-consultation-contacts__wrap {
+    padding: 48px 41px 58px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .personal-consultation-contacts__wrap {
+    padding: 48px 20px 58px 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .personal-consultation-contacts__wrap {
+    padding: 38px 10px 38px 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .personal-consultation-contacts__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 47px 20px 40px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 1023px) {
+  .personal-consultation-contacts__wrap {
+    margin: 0 -15px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .personal-consultation-contacts__wrap {
+    margin: 0 -10px;
+  }
+}
+.personal-consultation-contacts__left {
+  max-width: 852px;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .personal-consultation-contacts__left {
+    max-width: none;
+  }
+}
+.personal-consultation-contacts__right {
+  max-width: 323px;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .personal-consultation-contacts__right {
+    max-width: 283px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .personal-consultation-contacts__right {
+    max-width: 249px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .personal-consultation-contacts__right {
+    margin-top: 24px;
+    max-width: none;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .personal-consultation-contacts__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+.personal-consultation-contacts__group + .personal-consultation-contacts__group {
+  margin-top: 34px;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .personal-consultation-contacts__group + .personal-consultation-contacts__group {
+    margin-top: 0;
+    margin-left: 25px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .personal-consultation-contacts__group + .personal-consultation-contacts__group {
+    margin-top: 25px;
+  }
+}
+.personal-consultation-contacts__label {
+  display: block;
+  margin-bottom: 16px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+  color: #A8A8A8;
+}
+.personal-consultation-contacts__label + .personal-consultation-contacts__link, .personal-consultation-contacts__label + .personal-consultation-contacts__address {
+  margin-top: 16px;
+}
+.personal-consultation-contacts__address {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.3333333333;
+  letter-spacing: -0.48px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .personal-consultation-contacts__address {
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: -0.4px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .personal-consultation-contacts__address {
+    font-size: 18px;
+    letter-spacing: -0.36px;
+  }
+}
+.personal-consultation-contacts__link {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.3333333333;
+  letter-spacing: -0.48px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .personal-consultation-contacts__link {
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: -0.4px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .personal-consultation-contacts__link {
+    font-size: 18px;
+    letter-spacing: -0.36px;
+  }
+}
+.personal-consultation-contacts__phone {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Manrope", sans-serif;
+  font-size: 107px;
+  font-weight: 500;
+  line-height: 1.3333333333;
+  letter-spacing: -2.14px;
+}
+@media screen and (min-width: 1400px) and (max-width: 1699px) {
+  .personal-consultation-contacts__phone {
+    font-size: 97px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .personal-consultation-contacts__phone {
+    font-size: 87px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .personal-consultation-contacts__phone {
+    font-size: 67px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1023px) {
+  .personal-consultation-contacts__phone {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 479px) {
+  .personal-consultation-contacts__phone {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .personal-consultation-contacts__phone {
+    font-size: 38px;
+  }
+}
+.personal-consultation-contacts__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 35px;
+}
+@media screen and (max-width: 1199px) {
+  .personal-consultation-contacts__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .personal-consultation-contacts__inner {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .personal-consultation-contacts__inner {
+    margin-top: 20px;
+  }
+}
+.personal-consultation-contacts__btn {
+  min-width: 300px;
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .personal-consultation-contacts__btn {
+    min-width: 260px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .personal-consultation-contacts__btn {
+    min-width: 240px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .personal-consultation-contacts__btn {
+    min-width: 200px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .personal-consultation-contacts__btn {
+    min-width: auto;
+    width: 100%;
+  }
+}
+.personal-consultation-contacts__btn + .personal-consultation-contacts__btn {
+  margin-left: 20px;
+}
+@media screen and (max-width: 767px) {
+  .personal-consultation-contacts__btn + .personal-consultation-contacts__btn {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
+.personal-consultation-contacts__help {
+  display: block;
+  margin-left: 40px;
+  max-width: 182px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #666;
+}
+@media screen and (max-width: 1199px) {
+  .personal-consultation-contacts__help {
+    margin-left: 0;
+    max-width: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .personal-consultation-contacts__help {
+    margin-top: 17px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .personal-consultation-contacts__help {
+    margin-top: 10px;
+  }
+}
+
 @media screen and (min-width: 375px) and (max-width: 767px) {
   .articles__slider .swiper {
     margin: 0 -30px;
@@ -5688,16 +6377,27 @@ svg {
 }
 @media screen and (min-width: 1200px) {
   .articles__slider .swiper-slide {
-    width: calc(50% - 22.5px);
+    width: calc(33.333333333% - 30px);
   }
-  .articles__slider .swiper-slide:nth-child(2n) {
+  .articles__slider .swiper-slide:nth-child(3n), .articles__slider .swiper-slide:nth-child(3n-1) {
     margin-left: 45px;
   }
-  .articles__slider .swiper-slide:nth-child(n+3) {
+  .articles__slider .swiper-slide:nth-child(n+4) {
     margin-top: 40px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .articles__slider .swiper-slide {
+    width: calc(33.333333333% - 10px);
+  }
+  .articles__slider .swiper-slide:nth-child(3n), .articles__slider .swiper-slide:nth-child(3n-1) {
+    margin-left: 15px;
+  }
+  .articles__slider .swiper-slide:nth-child(n+4) {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .articles__slider .swiper-slide {
     width: calc(50% - 7.5px);
   }
