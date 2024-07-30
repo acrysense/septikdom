@@ -592,9 +592,10 @@
 							</svg>
 						</a>
 						<picture class="catalog-banner__img">
-							<img src="img/catalog-banner-brochure.png" alt="Image">
+							<source srcset="img/catalog-banner-brochure.png" media="(min-width: 1024px)">
+							<img src="img/catalog-banner-brochure-mobile.png" alt="Image">
 						</picture>
-						<p class="catalog-banner__description">В каталоге представлены станции 30 ведущих производителей под любые требования</p>
+						<p class="catalog-banner__description">В каталоге представлены <b>станции 30 ведущих производителей</b> под любые требования</p>
 					</div>
 				</div>
 			</div>
@@ -614,7 +615,68 @@
 				<div class="container">
 					<div class="section-heading">
 						<h2 class="section-heading__title">Выполним монтаж автономной канализации за 1 день</h2>
-						<span class="section-heading__tag">Приезжаем утром и осуществляем монтаж в среднем за 6-8 часов</span>
+						<span class="section-heading__tag">Приезжаем утром и осуществляем монтаж <b>в среднем за 6-8 часов</b></span>
+					</div>
+					<div class="install-sewerage__wrap">
+						<h3 class="install-sewerage__title"><b>Особенности монтажа</b> от Septikdom:</h3>
+						<div class="install-sewerage__slider">
+							<div class="swiper swiper-only-mobile">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="install-sewerage__item">
+											<span class="install-sewerage__value">Производим монтаж вне зависимости от <b>погодных условий и времени года</b></span>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="install-sewerage__item">
+											<span class="install-sewerage__value">Делаем монтаж на участках <br>с <b>высокими грунтовыми водами и глинистой почвой</b></span>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="install-sewerage__item">
+											<span class="install-sewerage__value">Учитываем все требования <br>к размещению канализации <b>согласно нормам СНиП</b></span>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="install-sewerage__item">
+											<span class="install-sewerage__value">Инженер участвует в монтаже и запуске станции, <b>контролируя все этапы</b></span>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="install-sewerage__item">
+											<span class="install-sewerage__value"><b>Не применяем тяжелую технику</b> без необходимости для сохранения участка</span>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="install-sewerage__item">
+											<span class="install-sewerage__value"><b>Обучаем пользованию станцией</b> и объясняем особенности эксплуатации</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="install-sewerage__wrap">
+						<h3 class="install-sewerage__title"><b>Посмотрите видео</b>, как мы делаем монтаж:</h3>
+						<div class="content-video install-sewerage__video">
+							<div class="content-video__media">
+								<img src="img/install-sewerage-preview.jpg" alt="Image">
+								<div class="content-video__play">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-play"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="content-video__media-iframe">
+								<iframe data-src="https://www.youtube.com/embed/WnbYu6lyJ1Q?si=jjIqn-yU0a0ndEYr" width="100%" height="100%" allow="autoplay; encrypted-media; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
+						<a href="#" class="install-sewerage__btn btn">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-call-history"></use>
+							</svg>
+							<span>консультация специалиста</span>
+						</a>
 					</div>
 				</div>
 			</section>
@@ -1715,8 +1777,56 @@
 			</section>
 			<!-- end of big reviews -->
 			<!-- get instructions -->
-			<section class="get-instructions">
-				<div class="container"></div>
+			<section class="get-instructions" id="get-instructions">
+				<div class="container">
+					<div class="get-instructions__wrap">
+						<div class="get-instructions__body">
+							<h3 class="get-instructions__title">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-pdf"></use>
+								</svg>
+								<span>Бесплатно получите PDF-инструкцию</span>
+							</h3>
+							<p class="get-instructions__description">«ТОП-10 ошибок при выборе места <br>для установки станции очистки»</p>
+							<div class="get-instructions__info">
+								<p>Узнайте, как избежать проблем при эксплуатации станции и дополнительных затрат, <b>которые возникают из-за ошибок монтажа через 2-3 года</b></p>
+							</div>
+						</div>
+						<div class="get-instructions__reading-time">
+							<span class="get-instructions__help">Время прочтения</span>
+							<span class="get-instructions__time">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-time"></use>
+								</svg>
+								<span>5 мин</span>
+							</span>
+						</div>
+						<div class="get-instructions-form get-instructions__form">
+							<h3 class="get-instructions-form__title">Заполните форму <br>и получите инструкцию</h3>
+							<form action="#" class="get-instructions-form__wrapper">
+								<div class="input-field get-instructions-form__input">
+									<div class="input-field__inner">
+										<svg class="input-field__icon">
+											<use xlink:href="img/sprite.svg#icon-call"></use>
+										</svg>
+										<input type="text" class="input-field__input" placeholder="+7" data-inputmask="'mask': '+7 (999) 999-99-99'">
+									</div>
+								</div>
+								<span class="get-instructions-form__help">Укажите, куда вам прислать материал</span>
+								<button class="get-instructions-form__btn btn">
+									<span>Получить инструкцию</span>
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-arrow-circle-next"></use>
+									</svg>
+								</button>
+							</form>
+							<p class="get-instructions-form__copyright">Нажимая на кнопку, вы соглашаетесь с <a href="#">Условиями обработки данных</a> и <a href="#">Политикой конфиденциальности</a></p>
+						</div>
+					</div>
+					<picture class="get-instructions__bg">
+						<img src="img/get-instructions-brochure.png" alt="Image">
+					</picture>
+				</div>
 			</section>
 			<!-- end of get instructions -->
 			<!-- special offers -->
@@ -1813,7 +1923,7 @@
 				<div class="container">
 					<div class="installment-plan__wrapper">
 						<div class="installment-plan__body">
-							<h3 class="installment-plan__title">Предоставляем беспроцентную рассрочку от банка Тинькофф</h3>
+							<h3 class="installment-plan__title">Предоставляем <b>беспроцентную</b> рассрочку от банка Тинькофф <img src="img/icon-t.svg" alt="Tinkoff"></h3>
 							<p class="installment-plan__description">Без справок и поручителей</p>
 							<a href="#" class="installment-plan__btn btn btn--t">
 								<span>Получить рассрочку</span>
