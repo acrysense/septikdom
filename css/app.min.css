@@ -2775,6 +2775,12 @@ svg {
 .main-catalog-card__status > * + * {
   margin-left: 6px;
 }
+.main-catalog-card__status--red {
+  background: #E95D5D;
+}
+.main-catalog-card__status--blue {
+  background: #3877F2;
+}
 .main-catalog-card__status + .main-catalog-card__status {
   margin-top: 6px;
 }
@@ -3309,6 +3315,18 @@ svg {
 .engineers-visit__important-btn:hover {
   color: #E95D5D;
 }
+@media screen and (hover: hover) {
+  .engineers-visit__important-btn:hover {
+    color: #FFFFFF;
+    background: #E95D5D;
+  }
+  .engineers-visit__important-btn:hover > svg {
+    color: #FFFFFF;
+  }
+  .engineers-visit__important-btn:hover > span {
+    border-color: #FFFFFF;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .engineers-visit__important-btn {
     min-width: 235px;
@@ -3734,6 +3752,294 @@ svg {
   }
   .install-sewerage__btn > * + * {
     margin-left: 8px;
+  }
+}
+
+.tech-support-banner__wrap {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 11px 81px 50px 141px;
+  color: #FFFFFF;
+  background-image: url(../img/tech-support-banner-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 30px;
+}
+.tech-support-banner__wrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 26, 26, 0.6);
+}
+@media screen and (min-width: 1700px) {
+  .tech-support-banner__wrap {
+    margin: 0 -140.5px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1699px) {
+  .tech-support-banner__wrap {
+    margin: 0 -38.5px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .tech-support-banner__wrap {
+    padding: 41px 41px 50px 61px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .tech-support-banner__wrap {
+    padding: 40px 20px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .tech-support-banner__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tech-support-banner__wrap {
+    padding: 40px 20px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 1023px) {
+  .tech-support-banner__wrap {
+    margin: 0 -15px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .tech-support-banner__wrap {
+    margin: 0 -10px;
+  }
+}
+.tech-support-banner__body {
+  max-width: 247px;
+  min-width: 247px;
+  width: 100%;
+}
+@media screen and (max-width: 1023px) {
+  .tech-support-banner__body {
+    margin-top: -18px;
+  }
+}
+.tech-support-banner__value {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Manrope", sans-serif;
+  font-size: 200px;
+  font-weight: 800;
+  line-height: 1.33;
+  letter-spacing: -4px;
+}
+.tech-support-banner__value + .tech-support-banner__subtitle {
+  margin-top: -40px;
+}
+.tech-support-banner__subtitle {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Manrope", sans-serif;
+  font-size: 29px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 17.98px;
+  text-transform: uppercase;
+}
+.tech-support-banner__help {
+  display: block;
+  margin-top: 11px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+.tech-support-banner__main {
+  margin-left: 163px;
+  max-width: calc(100% - 247px - 163px);
+  width: 100%;
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .tech-support-banner__main {
+    margin-left: 59px;
+    max-width: calc(100% - 247px - 59px);
+  }
+}
+@media screen and (max-width: 1023px) {
+  .tech-support-banner__main {
+    margin-left: 0;
+    max-width: none;
+  }
+}
+.tech-support-banner__title {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Manrope", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.3333333333;
+  letter-spacing: -0.6px;
+}
+@media screen and (max-width: 1023px) {
+  .tech-support-banner__title {
+    margin: 0 auto;
+    max-width: 341px;
+    width: 100%;
+    text-align: center;
+  }
+}
+.tech-support-banner__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 26px;
+  margin-right: -37px;
+  margin-bottom: -40px;
+}
+@media screen and (max-width: 767px) {
+  .tech-support-banner__list {
+    margin-top: 29px;
+    margin-right: 0;
+    margin-bottom: -22px;
+  }
+}
+.tech-support-banner__list-item {
+  margin-right: 37px;
+  margin-bottom: 40px;
+  max-width: 237px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media screen and (max-width: 767px) {
+  .tech-support-banner__list-item {
+    margin-right: 0;
+    margin-bottom: 22px;
+    max-width: none;
+    width: 100%;
+  }
+}
+.tech-support-banner__elem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+.tech-support-banner__elem > svg {
+  margin-top: 7px;
+  margin-right: 11px;
+  min-width: 15px;
+  width: 15px;
+  height: 15px;
+  color: #5ED06E;
+}
+.tech-support-banner__support {
+  position: relative;
+  z-index: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+  padding: 28px 58.5px;
+  min-width: 530px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid #FFFFFF;
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+}
+.tech-support-banner__support::before {
+  content: "";
+  position: absolute;
+  right: 36px;
+  bottom: 0;
+  z-index: 1;
+  display: block;
+  width: 201px;
+  height: 123px;
+  background-image: url(../img/tech-support-banner-img.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.tech-support-banner__support > svg {
+  min-width: 22px;
+  width: 22px;
+  height: 22px;
+  color: #FFFFFF;
+}
+.tech-support-banner__support > * + * {
+  margin-left: 13px;
+}
+.tech-support-banner__support b, .tech-support-banner__support strong {
+  display: block;
+}
+@media screen and (max-width: 1199px) {
+  .tech-support-banner__support {
+    padding: 28px 30px;
+    min-width: 420px;
+  }
+  .tech-support-banner__support::before {
+    right: 1px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tech-support-banner__support {
+    min-width: auto;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 479px) {
+  .tech-support-banner__support::before {
+    display: none;
   }
 }
 
@@ -4240,6 +4546,409 @@ svg {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.official-dealer__wrap {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 49px 140px 75px 140px;
+  color: #FFFFFF;
+  background-image: url(../img/official-dealer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 30px;
+}
+.official-dealer__wrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 26, 26, 0.6);
+}
+@media screen and (min-width: 1700px) {
+  .official-dealer__wrap {
+    margin: 0 -140.5px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1699px) {
+  .official-dealer__wrap {
+    margin: 0 -38.5px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .official-dealer__wrap {
+    padding: 49px 50px 75px 50px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .official-dealer__wrap {
+    padding: 46px 35px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .official-dealer__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (max-width: 767px) {
+  .official-dealer__wrap {
+    padding: 42px 20px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 1023px) {
+  .official-dealer__wrap {
+    margin: 0 -15px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .official-dealer__wrap {
+    margin: 0 -10px;
+  }
+}
+.official-dealer__left {
+  width: calc(50% - 21px);
+}
+@media screen and (max-width: 1023px) {
+  .official-dealer__left {
+    width: 100%;
+  }
+}
+.official-dealer__right {
+  margin-left: 42px;
+  width: calc(50% - 21px);
+}
+@media screen and (max-width: 1023px) {
+  .official-dealer__right {
+    margin-top: 41px;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+.official-dealer__title {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Manrope", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.8px;
+}
+@media screen and (max-width: 767px) {
+  .official-dealer__title {
+    font-size: 30px;
+    line-height: 1.3333333333;
+    letter-spacing: -0.6px;
+  }
+}
+.official-dealer__description {
+  display: block;
+  margin-top: 33px;
+  max-width: 463px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #D9D9D9;
+}
+@media screen and (max-width: 767px) {
+  .official-dealer__description {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+}
+.official-dealer__slider {
+  position: relative;
+  z-index: 1;
+  margin-top: 57px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .official-dealer__slider {
+    margin: 45px auto 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .official-dealer__slider {
+    margin: 27px auto 0;
+  }
+}
+.official-dealer__slider .swiper {
+  padding: 0 40px;
+}
+.official-dealer__slider .swiper-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 52px auto 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media screen and (max-width: 767px) {
+  .official-dealer__slider .swiper-pagination {
+    margin-top: 38px;
+  }
+}
+.official-dealer__slider .swiper-pagination-bullet {
+  display: block;
+  min-width: 5px;
+  width: 5px;
+  height: 5px;
+  background: #D9D9D9;
+  border-radius: 50%;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+@media screen and (hover: hover) {
+  .official-dealer__slider .swiper-pagination-bullet:hover {
+    background: #5ED06E;
+  }
+}
+.official-dealer__slider .swiper-pagination-bullet + .swiper-pagination-bullet {
+  margin-left: 15px;
+}
+.official-dealer__slider .swiper-pagination-bullet-active {
+  background: #5ED06E;
+}
+.official-dealer__slider .swiper-button-prev,
+.official-dealer__slider .swiper-button-next {
+  position: absolute;
+  top: calc(50% - 28.5px);
+  z-index: 10;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+@media screen and (hover: hover) {
+  .official-dealer__slider .swiper-button-prev:hover,
+  .official-dealer__slider .swiper-button-next:hover {
+    background: #FFFFFF;
+  }
+  .official-dealer__slider .swiper-button-prev:hover .swiper-button-icon,
+  .official-dealer__slider .swiper-button-next:hover .swiper-button-icon {
+    color: #424242;
+  }
+}
+.official-dealer__slider .swiper-button-prev {
+  left: 0;
+}
+.official-dealer__slider .swiper-button-next {
+  right: 0;
+}
+.official-dealer__slider .swiper-button-disabled {
+  pointer-events: none;
+}
+.official-dealer__slider .swiper-button-disabled .swiper-button-icon {
+  color: #A8A8A8;
+}
+.official-dealer__slider .swiper-button-icon {
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
+  color: #FFFFFF;
+}
+.official-dealer__slide {
+  position: relative;
+  z-index: 1;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+.official-dealer__slide::before {
+  content: "";
+  display: block;
+  padding-top: 75.382%;
+}
+.official-dealer__slide img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.official-dealer__author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 53px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media screen and (max-width: 1023px) {
+  .official-dealer__author {
+    margin: 0 auto 42px;
+  }
+}
+.official-dealer__author-img {
+  display: block;
+  overflow: hidden;
+  min-width: 61px;
+  width: 61px;
+  height: 61px;
+  border-radius: 50%;
+}
+.official-dealer__author-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.official-dealer__author-body {
+  position: relative;
+  z-index: 1;
+  margin-left: 22px;
+  padding: 26px 19px 26px 30px;
+  max-width: 442px;
+  background: #F5F7FA;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(14px);
+          backdrop-filter: blur(14px);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.official-dealer__author-text {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #6F6B72;
+}
+@media screen and (max-width: 479px) {
+  .official-dealer__author-text {
+    font-size: 14px;
+  }
+}
+.official-dealer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (min-width: 1024px) {
+  .official-dealer__item {
+    width: calc(33.333333333% - 6.6666666667px);
+  }
+  .official-dealer__item:nth-child(3n), .official-dealer__item:nth-child(3n-1) {
+    margin-left: 10px;
+  }
+  .official-dealer__item:nth-child(n+4) {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .official-dealer__item {
+    width: calc(25% - 5.25px);
+  }
+  .official-dealer__item:nth-child(4n), .official-dealer__item:nth-child(4n-1), .official-dealer__item:nth-child(4n-2) {
+    margin-left: 7px;
+  }
+  .official-dealer__item:nth-child(n+5) {
+    margin-top: 7px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .official-dealer__item {
+    width: calc(33.333333333% - 6.6666666667px);
+  }
+  .official-dealer__item:nth-child(3n), .official-dealer__item:nth-child(3n-1) {
+    margin-left: 10px;
+  }
+  .official-dealer__item:nth-child(n+4) {
+    margin-top: 10px;
+  }
+}
+.official-dealer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  padding: 30px;
+  width: 100%;
+  height: 128px;
+  background: rgba(26, 26, 26, 0.37);
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(17px);
+          backdrop-filter: blur(17px);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.official-dealer__logo > img {
+  display: block;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (max-width: 767px) {
+  .official-dealer__logo {
+    padding: 14px;
+    height: 84px;
+  }
 }
 
 .reviews__wrap {
