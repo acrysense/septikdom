@@ -3089,8 +3089,469 @@ svg {
   }
 }
 
-.engineers-visit {
-  display: none;
+.engineers-visit__wrap {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 119px 140px 69px 143px;
+  color: #FFFFFF;
+  background-color: #231F20;
+  background-image: url(../img/engineers-visit-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 30px;
+}
+@media screen and (min-width: 1700px) {
+  .engineers-visit__wrap {
+    margin: 0 -140.5px;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1699px) {
+  .engineers-visit__wrap {
+    padding: 119px 80px 69px 93px;
+    margin: 0 -38.5px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .engineers-visit__wrap {
+    padding: 99px 20px 69px 43px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .engineers-visit__wrap {
+    padding: 50px 35px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .engineers-visit__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 50px 20px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 1023px) {
+  .engineers-visit__wrap {
+    margin: 0 -15px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .engineers-visit__wrap {
+    margin: 0 -10px;
+  }
+}
+.engineers-visit__body {
+  max-width: 521px;
+  width: 100%;
+}
+.engineers-visit__title {
+  display: block;
+  margin-bottom: 59px;
+  max-width: 454px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Manrope", sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 1.3142857143;
+  letter-spacing: -0.7px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .engineers-visit__title {
+    margin-right: -120px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .engineers-visit__title {
+    font-size: 30px;
+    letter-spacing: -0.6px;
+  }
+}
+.engineers-visit__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .engineers-visit__list {
+    max-width: 240px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .engineers-visit__list-item {
+    width: calc(50% - 10px);
+  }
+  .engineers-visit__list-item:nth-child(2n) {
+    margin-left: 20px;
+  }
+  .engineers-visit__list-item:nth-child(n+3) {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .engineers-visit__list-item {
+    width: 100%;
+  }
+  .engineers-visit__list-item:nth-child(n+2) {
+    margin-top: 35px;
+  }
+  .engineers-visit__list-item:last-child {
+    margin-top: 59px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .engineers-visit__list-item {
+    width: calc(50% - 5px);
+  }
+  .engineers-visit__list-item:nth-child(2n) {
+    margin-left: 10px;
+  }
+  .engineers-visit__list-item:nth-child(n+3) {
+    margin-top: 22px;
+  }
+  .engineers-visit__list-item:last-child {
+    margin-top: 37px;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 479px) {
+  .engineers-visit__list-item {
+    width: 100%;
+  }
+  .engineers-visit__list-item:nth-child(n+2) {
+    margin-top: 22px;
+  }
+  .engineers-visit__list-item:last-child {
+    margin-top: 57px;
+  }
+  .engineers-visit__list-item:nth-last-child(2), .engineers-visit__list-item:nth-last-child(3), .engineers-visit__list-item:nth-last-child(4) {
+    padding-right: 160px;
+  }
+}
+.engineers-visit__elem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+.engineers-visit__elem > img {
+  display: block;
+  margin-top: 3px;
+  margin-right: 20px;
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.engineers-visit__important-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 17px 10px;
+  min-width: 251px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+  color: #E95D5D;
+  background: transparent;
+  border: 1px solid #E95D5D;
+  border-radius: 7px;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.engineers-visit__important-btn > svg {
+  min-width: 26px;
+  width: 26px;
+  height: 26px;
+  color: #E95D5D;
+}
+.engineers-visit__important-btn > span {
+  display: inline;
+  border-bottom: 1px solid #E95D5D;
+  -webkit-transition: border 0.25s ease-in-out;
+  transition: border 0.25s ease-in-out;
+}
+.engineers-visit__important-btn > * + * {
+  margin-left: 19px;
+}
+.engineers-visit__important-btn:hover {
+  color: #E95D5D;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .engineers-visit__important-btn {
+    min-width: 235px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .engineers-visit__important-btn {
+    min-width: 241px;
+  }
+}
+.engineers-visit__img {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% + 82px);
+  z-index: -1;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  display: block;
+  width: 518px;
+  height: 663px;
+}
+.engineers-visit__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .engineers-visit__img {
+    left: calc(50% + 42px);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .engineers-visit__img {
+    right: 18px;
+    bottom: 409px;
+    left: auto;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    width: 440px;
+    height: 563px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .engineers-visit__img {
+    left: auto;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .engineers-visit__img {
+    bottom: 600px;
+    right: 44px;
+    width: 125px;
+    height: 125px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .engineers-visit__img {
+    bottom: 720px;
+    right: 16px;
+    width: 115px;
+    height: 115px;
+  }
+}
+.engineers-visit__author {
+  position: absolute;
+  top: 150px;
+  left: calc(50% + 281.5px);
+  z-index: 1;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .engineers-visit__author {
+    top: 499px;
+    right: 28px;
+    left: auto;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .engineers-visit__author {
+    top: auto;
+    right: 10px;
+    left: auto;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .engineers-visit__author {
+    bottom: 543px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .engineers-visit__author {
+    bottom: 660px;
+  }
+}
+.engineers-visit__name {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+@media screen and (max-width: 767px) {
+  .engineers-visit__name {
+    font-size: 16px;
+  }
+}
+.engineers-visit__help {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #A6A6A6;
+}
+@media screen and (max-width: 767px) {
+  .engineers-visit__help {
+    margin-top: 3px;
+    font-size: 14px;
+  }
+}
+.engineers-visit__form {
+  margin-top: 120px;
+  max-width: 413px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .engineers-visit__form {
+    margin-top: 522px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .engineers-visit__form {
+    max-width: 420px;
+    min-width: 420px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .engineers-visit__form {
+    margin-top: 44px;
+  }
+}
+
+.engineers-visit-form {
+  overflow: hidden;
+  padding: 34px 45px 47px;
+  color: #231F20;
+  background: #F5F5F5;
+  border-radius: 10px;
+}
+@media screen and (max-width: 479px) {
+  .engineers-visit-form {
+    padding: 28px 16px;
+  }
+}
+.engineers-visit-form__title {
+  display: block;
+  margin: 0 -25px 34px;
+  font-family: "Manrope", sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.3333333333;
+  letter-spacing: -0.52px;
+  text-align: center;
+}
+@media screen and (max-width: 479px) {
+  .engineers-visit-form__title {
+    margin: 0 0 34px;
+  }
+}
+.engineers-visit-form__description {
+  display: block;
+  margin: 15px auto 0;
+  max-width: 262px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: center;
+}
+.engineers-visit-form__wrapper {
+  margin-top: 28px;
+}
+.engineers-visit-form__input {
+  width: 100%;
+}
+.engineers-visit-form__input + .engineers-visit-form__input {
+  margin-top: 15px;
+}
+.engineers-visit-form__btn {
+  margin-top: 15px;
+  width: 100%;
+}
+@media screen and (max-width: 479px) {
+  .engineers-visit-form__btn {
+    white-space: nowrap;
+  }
+  .engineers-visit-form__btn > * + * {
+    margin-left: 8px;
+  }
+}
+.engineers-visit-form__copyright {
+  display: block;
+  margin: 15px auto 0;
+  max-width: 298px;
+  width: 100%;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: center;
+  color: #C4C4C4;
+}
+.engineers-visit-form__copyright a {
+  display: inline;
+  color: #3877F2;
+  border-bottom: 1px solid #3877F2;
+}
+.engineers-visit-form__copyright a:hover {
+  color: #3877F2;
+}
+@media screen and (hover: hover) {
+  .engineers-visit-form__copyright a:hover {
+    color: #34A844;
+    border-color: #34A844;
+  }
 }
 
 .install-sewerage__wrap + .install-sewerage__wrap {
