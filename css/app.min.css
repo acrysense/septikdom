@@ -2433,10 +2433,6 @@ svg {
   }
 }
 
-.quiz {
-  display: none;
-}
-
 .main-catalog__slider {
   position: relative;
   z-index: 1;
@@ -5094,20 +5090,14 @@ svg {
 }
 @media screen and (min-width: 1400px) {
   .reviews__slider .swiper {
+    margin: 0 -20px;
     padding: 0 80px;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1399px) {
   .reviews__slider .swiper {
+    margin: 0 -20px;
     padding: 0 20px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .reviews__slider .swiper {
-    overflow: visible;
-    margin: 0 auto;
-    max-width: 1363px;
-    width: 100%;
   }
 }
 @media screen and (min-width: 375px) and (max-width: 1023px) {
@@ -5278,12 +5268,6 @@ svg {
     position: absolute;
     top: 88px;
     z-index: 10;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .reviews__slider-wrapper {
-    overflow-x: clip;
-    margin: 0 calc(50% - 50vw);
   }
 }
 .reviews__slide {
@@ -9407,6 +9391,9 @@ svg {
 @media screen and (max-width: 479px) {
   .personal-consultation-form__title {
     margin: 0 0 34px;
+  }
+  .personal-consultation-form__title br {
+    display: none;
   }
 }
 .personal-consultation-form__input {
