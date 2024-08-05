@@ -809,6 +809,10 @@ svg {
 }
 @media screen and (max-width: 1023px) {
   .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     -webkit-transition: background 0.15s ease 0.15s;
     transition: background 0.15s ease 0.15s;
   }
@@ -1587,6 +1591,16 @@ svg {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .wrapper {
+    padding-top: 75px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .wrapper {
+    padding-top: 65px;
+  }
 }
 .wrapper__content {
   -webkit-box-flex: 1;
@@ -6238,9 +6252,15 @@ svg {
   max-width: 609px;
 }
 .big-reviews-card__body {
+  overflow: hidden;
   margin-right: auto;
   max-width: 882px;
   width: 100%;
+  -webkit-transition: max-height 0.25s ease-in-out;
+  transition: max-height 0.25s ease-in-out;
+}
+.big-reviews-card__body.expanded {
+  max-height: none;
 }
 .big-reviews-card__author {
   display: block;
@@ -6343,6 +6363,43 @@ svg {
   .big-reviews-card__content {
     margin-top: 20px;
   }
+}
+@media screen and (max-width: 767px) {
+  .big-reviews-card__content {
+    display: -webkit-box;
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: vertical;
+    max-height: var(--full-height, none);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+  }
+  .big-reviews-card__content.is--expanded {
+    -webkit-line-clamp: 4;
+    max-height: 108px;
+  }
+}
+.big-reviews-card__expand-btn {
+  display: block;
+  margin-top: 5px;
+  padding: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #34A844;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #34A844;
+  border-radius: 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.big-reviews-card__expand-btn:focus {
+  outline: none;
 }
 .big-reviews-card__help {
   display: block;
