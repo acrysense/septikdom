@@ -12743,6 +12743,212 @@ svg {
   }
 }
 
+.thanks {
+  padding-top: 117px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .thanks {
+    padding-top: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .thanks {
+    padding-top: 0;
+  }
+}
+.thanks__wrap {
+  position: relative;
+  z-index: 1;
+  margin: 0 -140.5px;
+  padding: 63px 140px 57px 214px;
+  min-height: 497px;
+  width: calc(100% + 281px);
+  color: #FFFFFF;
+  background: #424242;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 4px 21px 0px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 4px 21px 0px rgba(0, 0, 0, 0.07);
+}
+@media screen and (min-width: 1400px) and (max-width: 1799px) {
+  .thanks__wrap {
+    margin: 0 -30px;
+    padding: 63px 30px 57px 164px;
+    width: calc(100% + 60px);
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
+  .thanks__wrap {
+    margin: 0;
+    padding: 63px 30px 57px 100px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .thanks__wrap {
+    padding: 46px 42px;
+    min-height: 427px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 1023px) {
+  .thanks__wrap {
+    margin: 0 -20px;
+    width: calc(100% + 40px);
+  }
+}
+@media screen and (max-width: 767px) {
+  .thanks__wrap {
+    overflow: hidden;
+    padding: 46px 30px 77px 30px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .thanks__wrap {
+    margin: 0;
+    width: 100%;
+  }
+}
+.thanks__body {
+  max-width: 441px;
+  width: 100%;
+}
+@media screen and (max-width: 1023px) {
+  .thanks__body {
+    margin-left: 0;
+    max-width: 418px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .thanks__body {
+    max-width: none;
+    text-align: center;
+  }
+}
+.thanks__heading {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Manrope", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.34;
+  letter-spacing: -0.8px;
+}
+@media screen and (max-width: 767px) {
+  .thanks__heading {
+    margin: 0 auto;
+    font-size: 30px;
+    letter-spacing: -0.6px;
+  }
+}
+.thanks__description {
+  display: block;
+  margin-top: 30px;
+  max-width: 353px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+@media screen and (max-width: 767px) {
+  .thanks__description {
+    margin: 18px auto 0;
+  }
+}
+.thanks__help {
+  display: block;
+  margin-top: 24px;
+  max-width: 353px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+@media screen and (max-width: 767px) {
+  .thanks__help {
+    margin: 11px auto 0;
+  }
+}
+.thanks__btn {
+  margin-top: 27px;
+  min-width: 320px;
+}
+@media screen and (max-width: 767px) {
+  .thanks__btn {
+    margin: 340px auto 0;
+  }
+}
+.thanks__img {
+  position: absolute;
+  right: 205px;
+  bottom: 0;
+  z-index: -1;
+  display: block;
+  width: 530px;
+  height: 614px;
+  pointer-events: none;
+}
+.thanks__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: bottom center;
+     object-position: bottom center;
+}
+@media screen and (min-width: 1400px) and (max-width: 1799px) {
+  .thanks__img {
+    right: 157px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
+  .thanks__img {
+    right: 7px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .thanks__img {
+    right: -15px;
+    width: 436px;
+    height: 499px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .thanks__img {
+    right: auto;
+    left: calc(50% - 9.5px);
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    width: 436px;
+    height: 499px;
+  }
+}
+.thanks__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+  display: block;
+  overflow: hidden;
+  height: 100%;
+  border-radius: 30px;
+}
+.thanks__bg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @-webkit-keyframes slide {
   from {
     -webkit-transform: translateX(0);
