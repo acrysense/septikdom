@@ -2812,6 +2812,84 @@ svg {
     min-height: 1120px;
   }
 }
+.modal__invite-engineer {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 76px 83px 69px;
+  border-radius: 10px;
+}
+.modal__invite-engineer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  display: block;
+  width: calc(100% - 483px - 54px);
+  height: 100%;
+  background: #3877F2;
+  border-radius: 66px 10px 10px 66px;
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .modal__invite-engineer {
+    padding: 70px 33px 69px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__invite-engineer::after {
+    top: -144px;
+    right: -176px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .modal__invite-engineer {
+    padding: 56px 20px 59px;
+  }
+  .modal__invite-engineer::before {
+    width: calc(100% - 483px);
+  }
+  .modal__invite-engineer::after {
+    top: -244px;
+    right: -376px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .modal__invite-engineer::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    display: block;
+    width: 787px;
+    height: 842px;
+    background-image: url(../img/s-decor-blue.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .modal__invite-engineer {
+    padding: 52px 30px 104px;
+  }
+  .modal__invite-engineer::before {
+    border-radius: 66px 10px 10px 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .modal__invite-engineer {
+    padding: 68px 20px 0;
+  }
+  .modal__invite-engineer::before {
+    top: auto;
+    left: 0;
+    bottom: -94px;
+    width: 100%;
+    height: 930px;
+    border-radius: 66px 66px 0 0;
+  }
+}
 
 .modal-form__input {
   width: 100%;
@@ -3562,6 +3640,219 @@ svg {
   .modal-get-instructions-form__copyright > a:hover {
     color: #34A844;
     border-color: #34A844;
+  }
+}
+
+.modal-invite-engineer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .modal-invite-engineer__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.modal-invite-engineer__body {
+  max-width: 483px;
+  width: 100%;
+}
+.modal-invite-engineer__heading {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Manrope", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.3333333333;
+  letter-spacing: -0.6px;
+}
+@media screen and (max-width: 767px) {
+  .modal-invite-engineer__heading {
+    font-size: 24px;
+    letter-spacing: -0.48px;
+  }
+}
+.modal-invite-engineer__description {
+  display: block;
+  margin-top: 12px;
+  margin-left: 6px;
+  max-width: 465px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+@media screen and (max-width: 1199px) {
+  .modal-invite-engineer__description {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .modal-invite-engineer__description {
+    font-size: 16px;
+  }
+}
+.modal-invite-engineer__list {
+  margin-top: 32px;
+  margin-left: 24px;
+  max-width: 365px;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .modal-invite-engineer__list {
+    margin-left: 16px;
+    max-width: 325px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .modal-invite-engineer__list {
+    margin-left: 0;
+    max-width: 280px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .modal-invite-engineer__list {
+    margin-top: 38px;
+    margin-left: 0;
+    max-width: 270px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .modal-invite-engineer__list {
+    margin-top: 26px;
+    margin-left: 0;
+  }
+}
+.modal-invite-engineer__list-item + .modal-invite-engineer__list-item {
+  margin-top: 27px;
+}
+.modal-invite-engineer__elem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.modal-invite-engineer__icon {
+  display: block;
+  overflow: hidden;
+  margin-right: 20px;
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+}
+.modal-invite-engineer__icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.modal-invite-engineer__value {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #666666;
+}
+.modal-invite-engineer__img {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% + 22px);
+  z-index: 1;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  display: block;
+  overflow: hidden;
+  width: 478px;
+  height: 612px;
+}
+.modal-invite-engineer__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: bottom center;
+     object-position: bottom center;
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .modal-invite-engineer__img {
+    left: 50%;
+    width: 398px;
+    height: 510px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .modal-invite-engineer__img {
+    right: 20px;
+    bottom: 259px;
+    left: auto;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    width: 344px;
+    height: 440px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .modal-invite-engineer__img {
+    bottom: 366px;
+    left: calc(50% - 1px);
+    width: 344px;
+    height: 440px;
+  }
+}
+.modal-invite-engineer__form {
+  position: relative;
+  z-index: 2;
+  margin-top: 32px;
+  max-width: 413px;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .modal-invite-engineer__form {
+    max-width: 393px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .modal-invite-engineer__form {
+    position: absolute;
+    right: 20px;
+    bottom: 23px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .modal-invite-engineer__form {
+    margin: 460px -20px 0;
+    max-width: none;
+    width: calc(100% + 40px);
+  }
+  .modal-invite-engineer__form .personal-consultation-form {
+    padding-bottom: 55px;
+  }
+  .modal-invite-engineer__form .personal-consultation-form__title {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 360px;
   }
 }
 
