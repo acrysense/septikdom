@@ -2423,7 +2423,7 @@ svg {
   margin: 20px auto;
   padding: 0 20px;
   min-height: calc(100dvh - 40px);
-  max-width: 540px;
+  max-width: 1365px;
   width: 100%;
   opacity: 0;
   -webkit-transition: all 0.15s ease;
@@ -2441,6 +2441,17 @@ svg {
 .modal__wrap--md .modal__wrapper {
   padding: 56px 69px 60px;
 }
+.modal__wrap--xl {
+  max-width: 1446px;
+}
+.modal__wrap--xl .modal__wrapper {
+  padding: 47px 42px 52px;
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .modal__wrap--xl .modal__wrapper {
+    padding: 47px 20px 52px;
+  }
+}
 @media screen and (min-width: 375px) and (max-width: 767px) {
   .modal__wrap {
     padding: 0 16px;
@@ -2450,6 +2461,9 @@ svg {
   }
   .modal__wrap--md .modal__wrapper {
     padding: 29px 30px 35px;
+  }
+  .modal__wrap--xl .modal__wrapper {
+    padding: 47px 16px 30px;
   }
 }
 @media screen and (max-width: 374px) {
@@ -2462,10 +2476,14 @@ svg {
   .modal__wrap--md .modal__wrapper {
     padding: 29px 20px 35px;
   }
+  .modal__wrap--xl .modal__wrapper {
+    padding: 47px 8px 30px;
+  }
 }
 .modal__wrapper {
   position: relative;
   z-index: 1;
+  overflow: hidden;
   width: 100%;
   background: #FFFFFF;
   border-radius: 10px;
@@ -2538,6 +2556,116 @@ svg {
 }
 .modal__discount {
   margin-top: 16px;
+}
+.modal__discount::before {
+  content: "";
+  position: absolute;
+  left: -239px;
+  bottom: -62px;
+  z-index: -1;
+  display: block;
+  width: 517px;
+  height: 553px;
+  background-image: url(../img/s-decor-grey.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.modal__discount::after {
+  content: "";
+  position: absolute;
+  top: -411px;
+  right: -374px;
+  z-index: -1;
+  display: block;
+  width: 517px;
+  height: 553px;
+  background-image: url(../img/s-decor-grey.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.modal__quiz .quiz__wrapper {
+  background: #F9F9F9;
+}
+.modal__consultation {
+  overflow: hidden;
+  padding: 90px 84px 69px;
+}
+@media screen and (min-width: 1200px) {
+  .modal__consultation .personal-consultation__img {
+    bottom: -99px;
+    left: calc(50% - 21.5px);
+    width: 522px;
+    height: 606px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
+  .modal__consultation {
+    padding: 90px 34px 69px;
+  }
+  .modal__consultation .personal-consultation__img {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .modal__consultation {
+    padding: 52px 38px 0;
+  }
+  .modal__consultation .personal-consultation__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .modal__consultation .personal-consultation__title {
+    max-width: none;
+  }
+  .modal__consultation .personal-consultation__list {
+    margin-top: 50px;
+  }
+  .modal__consultation .personal-consultation__img {
+    top: auto;
+    right: 4px;
+    bottom: 274px;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    width: 375px;
+    height: 436px;
+  }
+  .modal__consultation .personal-consultation__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 41px;
+    padding: 30px 22px 37px 28px;
+    max-width: none;
+    min-width: auto;
+    width: 100%;
+  }
+  .modal__consultation .personal-consultation-form__title {
+    margin: 0;
+    max-width: calc(100% - 340px - 10px);
+    width: 100%;
+    text-align: left;
+  }
+  .modal__consultation .personal-consultation-form__block {
+    margin-left: 10px;
+    max-width: 340px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .modal__consultation {
+    padding: 40px 20px 39px;
+  }
 }
 
 .modal-form__input {
@@ -13010,6 +13138,7 @@ svg {
 @media screen and (max-width: 767px) {
   .personal-consultation__form {
     margin: 30px 0 0 auto;
+    max-width: none;
   }
 }
 .personal-consultation__contacts {
