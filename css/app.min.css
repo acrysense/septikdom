@@ -370,6 +370,9 @@ svg {
   color: #424242;
 }
 @media screen and (hover: hover) {
+  .btn:hover {
+    background: linear-gradient(94deg, #3BA84A -1.88%, #2C8F3A 100.9%);
+  }
   .btn--border:hover {
     color: #FFFFFF;
     background: #34A844;
@@ -2254,7 +2257,7 @@ svg {
   content: "";
   display: block;
   position: absolute;
-  width: 60px;
+  width: 40px;
   height: 200px;
   background: #fff;
   top: -50px;
@@ -3473,19 +3476,20 @@ svg {
 .modal-get-instructions__quote::before {
   content: "";
   position: absolute;
-  top: -18.5px;
-  left: 46px;
+  top: 0.5px;
+  left: 44px;
   z-index: 1;
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -webkit-transform: translate(0, -100%);
+      -ms-transform: translate(0, -100%);
+          transform: translate(0, -100%);
   display: block;
-  width: 15px;
-  height: 30px;
-  background-image: url(../img/icon-triangle-left.svg);
+  width: 22px;
+  height: 10.5px;
+  background-image: url(../img/icon-triangle-top-square.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
+  pointer-events: none;
 }
 @media screen and (min-width: 1024px) and (max-width: 1199px) {
   .modal-get-instructions__quote {
@@ -5714,6 +5718,8 @@ svg {
   line-height: 1.5;
 }
 .quiz-banner__quote {
+  position: relative;
+  z-index: 1;
   display: block;
   margin: 20px 0 0;
   padding: 30px 16px 30px 26px;
@@ -5725,9 +5731,30 @@ svg {
   background: #F5F7FA;
   border-radius: 15px;
 }
+.quiz-banner__quote::before {
+  content: "";
+  position: absolute;
+  top: 0.5px;
+  left: 42px;
+  z-index: 1;
+  -webkit-transform: translate(0, -100%);
+      -ms-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+  display: block;
+  width: 22px;
+  height: 10.5px;
+  background-image: url(../img/icon-triangle-top-square.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  pointer-events: none;
+}
 @media screen and (max-width: 479px) {
   .quiz-banner__quote {
     padding: 20px 6px 20px 20px;
+  }
+  .quiz-banner__quote::before {
+    left: 30px;
   }
 }
 .quiz-banner__subtitle {
@@ -6485,7 +6512,6 @@ svg {
 .engineers-visit__wrap {
   position: relative;
   z-index: 1;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6503,6 +6529,42 @@ svg {
   background-size: cover;
   background-position: center center;
   border-radius: 30px;
+}
+.engineers-visit__wrap::before {
+  content: "";
+  position: absolute;
+  top: -0.5px;
+  left: 50%;
+  z-index: 1;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  display: block;
+  width: 87.5px;
+  height: 22.5px;
+  background-image: url(../img/icon-triangle-top.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  pointer-events: none;
+}
+.engineers-visit__wrap::after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  z-index: 1;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  display: block;
+  width: 21px;
+  height: 22px;
+  background-image: url(../img/icon-s-black.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  pointer-events: none;
 }
 @media screen and (min-width: 1700px) {
   .engineers-visit__wrap {
@@ -6532,6 +6594,11 @@ svg {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 50px 20px;
+  }
+  .engineers-visit__wrap::after {
+    top: -9px;
+    width: 17px;
+    height: 18px;
   }
 }
 @media screen and (min-width: 375px) and (max-width: 1023px) {
@@ -9207,6 +9274,24 @@ svg {
           backdrop-filter: blur(14px);
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
+}
+.official-dealer__author-body::before {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 0.5px;
+  z-index: 1;
+  -webkit-transform: translate(-100%, 0);
+      -ms-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+  display: block;
+  width: 10.5px;
+  height: 44.5px;
+  background-image: url(../img/icon-triangle-left.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  pointer-events: none;
 }
 .official-dealer__author-text {
   display: block;
