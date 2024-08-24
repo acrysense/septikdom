@@ -29,35 +29,37 @@
 		<!-- header -->
 		<header class="header" id="header">
 			<div class="header__top">
-				<div class="container">
-					<div class="header__wrapper">
-						<div class="header__logotype">
-							<a href="home.html" class="header__logotype-img">
-								<img src="img/logotype.svg" width="183" height="29" alt="septikdom">
+				<div class="header__fixed">
+					<div class="container">
+						<div class="header__wrapper">
+							<div class="header__logotype">
+								<a href="home.html" class="header__logotype-img">
+									<img src="img/logotype.svg" width="183" height="29" alt="septikdom">
+								</a>
+								<p class="header__logotype-description">Установка автономной канализации в Ленобласти</p>
+							</div>
+							<div class="c-search header__search">
+								<form action="#" class="c-search__form">
+									<button class="c-search__btn" aria-label="Поиск">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-search"></use>
+										</svg>
+									</button>
+									<input type="text" class="c-search__input" placeholder="Поиск">
+								</form>
+							</div>
+							<a href="tel:+78123857383" class="header__phone">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-call"></use>
+								</svg>
+								<span>+7 812 385 73 83</span>
 							</a>
-							<p class="header__logotype-description">Установка автономной канализации в Ленобласти</p>
+							<button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+								<svg class="hamburger__icon">
+									<use xlink:href="img/sprite.svg#icon-hamburger"></use>
+								</svg>
+							</button>
 						</div>
-						<div class="c-search header__search">
-							<form action="#" class="c-search__form">
-								<button class="c-search__btn" aria-label="Поиск">
-									<svg>
-										<use xlink:href="img/sprite.svg#icon-search"></use>
-									</svg>
-								</button>
-								<input type="text" class="c-search__input" placeholder="Поиск">
-							</form>
-						</div>
-						<a href="tel:+78123857383" class="header__phone">
-							<svg>
-								<use xlink:href="img/sprite.svg#icon-call"></use>
-							</svg>
-							<span>+7 812 385 73 83</span>
-						</a>
-						<button class="hamburger" id="hamburger-toggle" aria-label="Меню">
-							<svg class="hamburger__icon">
-								<use xlink:href="img/sprite.svg#icon-hamburger"></use>
-							</svg>
-						</button>
 					</div>
 				</div>
 			</div>
@@ -112,7 +114,7 @@
 			<section class="quiz section-indent" id="quiz">
 				<div class="container">
 					<div class="section-heading">
-						<h2 class="section-heading__title">Поможем с выбором, объясним нюансы и различия разных станций</h2>
+						<h2 class="section-heading__title">Поможем с выбором, объясним <br>нюансы и различия разных станций</h2>
 						<h3 class="section-heading__subtitle">Ответьте всего на <b>6 вопросов</b> для выбора <br>оборудования и расчета стоимости монтажа</h3>
 					</div>
 					<div class="quiz__wrap">
