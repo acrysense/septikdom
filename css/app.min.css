@@ -2581,6 +2581,9 @@ svg {
 .modal__wrap--lg {
   max-width: 1161px;
 }
+.modal__wrap--lg .modal__wrapper {
+  overflow: hidden;
+}
 .modal__wrap--xl {
   max-width: 1446px;
 }
