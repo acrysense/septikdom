@@ -1392,10 +1392,16 @@ svg {
   z-index: 10;
   display: inline;
 }
-.c-info--white .c-info__icon {
+.c-info--white .c-info__trigger > span {
+  border-color: #FFFFFF;
+}
+.c-info--white .c-info__trigger > svg {
   color: #FFFFFF;
 }
-.c-info--green .c-info__icon {
+.c-info--green .c-info__trigger > span {
+  border-color: #34A844;
+}
+.c-info--green .c-info__trigger > svg {
   color: #34A844;
 }
 .c-info.is--active .c-info__dropdown {
@@ -1403,13 +1409,20 @@ svg {
   opacity: 1;
   pointer-events: all;
 }
-.c-info__icon {
+.c-info__trigger {
+  display: inline;
+  cursor: pointer;
+}
+.c-info__trigger > span {
+  display: inline;
+  border-bottom: 1px dashed #424242;
+}
+.c-info__trigger > svg {
   margin-top: -2px;
   min-width: 17px;
   width: 17px;
   height: 17px;
   color: #424242;
-  cursor: pointer;
 }
 .c-info__dropdown {
   position: fixed;
@@ -4578,10 +4591,6 @@ svg {
   font-weight: normal;
   line-height: 1.5;
 }
-.main__help > span {
-  display: inline;
-  border-bottom: 1px dashed #FFFFFF;
-}
 @media screen and (max-width: 1023px) {
   .main__help {
     font-size: 16px;
@@ -5016,10 +5025,6 @@ svg {
   font-size: 18px;
   font-weight: normal;
   line-height: 1.5555555556;
-}
-.advantages__title > b {
-  display: inline;
-  border-bottom: 1px dashed #424242;
 }
 @media screen and (max-width: 1199px) {
   .advantages__title br {
